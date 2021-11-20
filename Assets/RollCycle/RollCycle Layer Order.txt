@@ -1,0 +1,13 @@
+LAYER ORDER
+(bottom to top)
+1. Shirt
+2. Pants
+3. Shoes
+4. Faceskin
+5. Hair
+6. Eye Color
+7. Eye Whites
+8. Wheelchair Frame
+9. Wheelchair Seat
+10. Sleeve
+11. Hand
