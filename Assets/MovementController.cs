@@ -5,6 +5,11 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
     Camera maincam;
+    public GameManager GM;
+
+    public KeyCode left { get; set; }
+    public KeyCode right { get; set; }
+    public KeyCode tilt { get; set; }
 
     // Physics Variables
     public float speed = 1;
@@ -29,6 +34,9 @@ public class MovementController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        left = KeyCode.A;//GM.left;
+        right = KeyCode.D;// GM.right;
+        tilt = KeyCode.Space;// GM.tilt;
         ani = GetComponent<Animator>();             // Addresses Animator attached to Wheelie Prefab
         maincam = Camera.main;                      // Scene Main Camera
         Wheelmotor.maxMotorTorque = maxForce;       // Set's max force the player can add to the Wheelchair
@@ -38,7 +46,7 @@ public class MovementController : MonoBehaviour
     // FixedUpdate called first -- Once per frame
     void FixedUpdate()
     {
-        float jump = Input.GetAxis("Jump");
+        float jump = VerticalAxis();
         if (jump != 0)
         {
             lean += jump * leanSpeed * Time.deltaTime * direction;
@@ -50,7 +58,7 @@ public class MovementController : MonoBehaviour
             lean *= 0.90f;
         }
 
-        float dir = Input.GetAxis("Horizontal");    // Get Horizonal directional input (A or D/Left or Right)
+        float dir = HorizontalAxis();    // Get Horizonal directional input (A or D/Left or Right)
         if (dir != 0)                               // What happens when the player is moving
         {
             move += dir * speed * Time.deltaTime;   // Add force to movement
@@ -97,6 +105,28 @@ public class MovementController : MonoBehaviour
         // Debug for testing
         Debug.Log(dir + "," + move);
     }
+
+    private float HorizontalAxis()
+    {
+        if(Input.GetKey(left))
+        {
+            return -1;
+        } else if (Input.GetKey(right))
+        {
+            return 1;
+        }
+        return 0;
+    }
+
+    private float VerticalAxis()
+    {
+        if (Input.GetKey(tilt))
+        {
+            return 1;
+        }
+        return 0;
+    }
+
 
     // Update called second -- once per frame
     private void Update()
