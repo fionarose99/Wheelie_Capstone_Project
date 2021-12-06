@@ -124,7 +124,11 @@ MonoBehaviour:
   m_MaxSize: {x: 22004, y: 14042}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 186
+=======
+  controlID: 99
+>>>>>>> Stashed changes
 =======
   controlID: 99
 >>>>>>> Stashed changes
@@ -153,7 +157,11 @@ MonoBehaviour:
   m_MaxSize: {x: 8001, y: 8042}
   vertical: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 42
+=======
+  controlID: 22
+>>>>>>> Stashed changes
 =======
   controlID: 22
 >>>>>>> Stashed changes
@@ -209,7 +217,11 @@ MonoBehaviour:
   m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 88
+=======
+  controlID: 47
+>>>>>>> Stashed changes
 =======
   controlID: 47
 >>>>>>> Stashed changes
@@ -290,7 +302,11 @@ MonoBehaviour:
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 120
+=======
+  controlID: 100
+>>>>>>> Stashed changes
 =======
   controlID: 100
 >>>>>>> Stashed changes
@@ -503,7 +519,11 @@ MonoBehaviour:
     m_Target: {x: -1.5701425, y: 0.08083719, z: -17.705868}
     speed: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Value: {x: -1.6994655, y: -0.11465114, z: -17.680412}
+>>>>>>> Stashed changes
 =======
     m_Value: {x: -1.6994655, y: -0.11465114, z: -17.680412}
 >>>>>>> Stashed changes
@@ -560,7 +580,11 @@ MonoBehaviour:
     m_Target: 6.7527995
     speed: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Value: 1.5080049
+=======
+    m_Value: 7.0709944
+>>>>>>> Stashed changes
 =======
     m_Value: 7.0709944
 >>>>>>> Stashed changes
@@ -669,7 +693,11 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       m_ExpandedIDs: 88faffff
+=======
+      m_ExpandedIDs: 40fbffff
+>>>>>>> Stashed changes
 =======
       m_ExpandedIDs: 40fbffff
 >>>>>>> Stashed changes
@@ -892,6 +920,9 @@ MonoBehaviour:
 =======
     m_Folders:
     - Assets/Palletes
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
@@ -907,7 +938,11 @@ MonoBehaviour:
     m_SelectedIDs: 683d0000
     m_LastClickedID: 15720
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_ExpandedIDs: 000000006442000066420000684200006e420000a8420000be420000c8420000d043000020440000224400002444000026440000284400002a4400002c4400002e44000030440000
+=======
+    m_ExpandedIDs: 000000001c4300001e43000020430000224300002443000026430000284300002a4300002c430000
+>>>>>>> Stashed changes
 =======
     m_ExpandedIDs: 000000001c4300001e43000020430000224300002443000026430000284300002a4300002c430000
 >>>>>>> Stashed changes
@@ -939,7 +974,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_ExpandedIDs: ffffffff000000006442000066420000684200006e420000a8420000be420000c8420000d0430000204400002244000024440000284400002c4400002e44000030440000
+=======
+    m_ExpandedIDs: ffffffff000000001c4300001e43000020430000224300002443000026430000284300002a4300002c430000
+>>>>>>> Stashed changes
 =======
     m_ExpandedIDs: ffffffff000000001c4300001e43000020430000224300002443000026430000284300002a4300002c430000
 >>>>>>> Stashed changes
