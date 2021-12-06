@@ -21,11 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Scene
   m_RootView: {fileID: 2}
-<<<<<<< HEAD
   m_MinSize: {x: 875, y: 300}
-=======
-  m_MinSize: {x: 875, y: 542}
->>>>>>> parent of d7a6687 (layout)
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -50,11 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-<<<<<<< HEAD
   m_MinSize: {x: 875, y: 300}
-=======
-  m_MinSize: {x: 875, y: 542}
->>>>>>> parent of d7a6687 (layout)
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -128,7 +120,6 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-<<<<<<< HEAD
   m_MinSize: {x: 809, y: 442}
   m_MaxSize: {x: 22004, y: 14042}
   vertical: 0
@@ -141,12 +132,6 @@ MonoBehaviour:
 =======
   controlID: 99
 >>>>>>> Stashed changes
-=======
-  m_MinSize: {x: 808, y: 442}
-  m_MaxSize: {x: 22003, y: 14042}
-  vertical: 0
-  controlID: 66561
->>>>>>> parent of d7a6687 (layout)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -171,7 +156,6 @@ MonoBehaviour:
   m_MinSize: {x: 301, y: 442}
   m_MaxSize: {x: 8001, y: 8042}
   vertical: 1
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   controlID: 42
@@ -181,9 +165,6 @@ MonoBehaviour:
 =======
   controlID: 22
 >>>>>>> Stashed changes
-=======
-  controlID: 66448
->>>>>>> parent of d7a6687 (layout)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,11 +183,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 738
-<<<<<<< HEAD
     height: 574
-=======
-    height: 573
->>>>>>> parent of d7a6687 (layout)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -233,7 +210,6 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 574
     width: 738
     height: 373
@@ -249,15 +225,6 @@ MonoBehaviour:
 =======
   controlID: 47
 >>>>>>> Stashed changes
-=======
-    y: 573
-    width: 738
-    height: 374
-  m_MinSize: {x: 301, y: 221}
-  m_MaxSize: {x: 8001, y: 4021}
-  vertical: 0
-  controlID: 66529
->>>>>>> parent of d7a6687 (layout)
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,13 +242,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
     width: 434
     height: 373
-=======
-    width: 433
-    height: 374
->>>>>>> parent of d7a6687 (layout)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -304,17 +266,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 434
     y: 0
     width: 304
     height: 373
-=======
-    x: 433
-    y: 0
-    width: 305
-    height: 374
->>>>>>> parent of d7a6687 (layout)
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -346,7 +301,6 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 392}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   controlID: 120
@@ -356,9 +310,6 @@ MonoBehaviour:
 =======
   controlID: 100
 >>>>>>> Stashed changes
-=======
-  controlID: 66567
->>>>>>> parent of d7a6687 (layout)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -377,11 +328,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 762
-<<<<<<< HEAD
     height: 500
-=======
-    height: 499
->>>>>>> parent of d7a6687 (layout)
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
@@ -408,15 +355,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 500
     width: 762
     height: 447
-=======
-    y: 499
-    width: 762
-    height: 448
->>>>>>> parent of d7a6687 (layout)
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 23}
@@ -443,13 +384,8 @@ MonoBehaviour:
     y: 0
     width: 420
     height: 947
-<<<<<<< HEAD
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-=======
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> parent of d7a6687 (layout)
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -476,15 +412,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 647
     width: 433
     height: 352
-=======
-    y: 646
-    width: 432
-    height: 353
->>>>>>> parent of d7a6687 (layout)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -492,11 +422,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-<<<<<<< HEAD
   m_TargetSize: {x: 433, y: 331}
-=======
-  m_TargetSize: {x: 432, y: 332}
->>>>>>> parent of d7a6687 (layout)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -511,17 +437,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
     m_HBaseRangeMin: -216.5
     m_HBaseRangeMax: 216.5
     m_VBaseRangeMin: -165.5
     m_VBaseRangeMax: 165.5
-=======
-    m_HBaseRangeMin: -216
-    m_HBaseRangeMax: 216
-    m_VBaseRangeMin: -166
-    m_VBaseRangeMax: 166
->>>>>>> parent of d7a6687 (layout)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -539,24 +458,16 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
       width: 433
       height: 331
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 216.5, y: 165.5}
-=======
-      width: 432
-      height: 332
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 216, y: 166}
->>>>>>> parent of d7a6687 (layout)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
       x: -216.5
       y: -165.5
       width: 433
@@ -564,15 +475,6 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 433, y: 352}
-=======
-      x: -216
-      y: -166
-      width: 432
-      height: 332
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 432, y: 353}
->>>>>>> parent of d7a6687 (layout)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -601,11 +503,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 737
-<<<<<<< HEAD
     height: 553
-=======
-    height: 552
->>>>>>> parent of d7a6687 (layout)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d078df885e7646e4b9d76c4045a9615c
@@ -620,7 +518,6 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -1.5701425, y: 0.08083719, z: -17.705868}
     speed: 2
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_Value: {x: 0, y: 0, z: 0}
@@ -630,9 +527,6 @@ MonoBehaviour:
 =======
     m_Value: {x: -1.6994655, y: -0.11465114, z: -17.680412}
 >>>>>>> Stashed changes
-=======
-    m_Value: {x: 0.000011983165, y: 0.00001175726, z: -0.0000005034163}
->>>>>>> parent of d7a6687 (layout)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -685,7 +579,6 @@ MonoBehaviour:
   m_Size:
     m_Target: 6.7527995
     speed: 2
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_Value: 1.5080049
@@ -695,9 +588,6 @@ MonoBehaviour:
 =======
     m_Value: 7.0709944
 >>>>>>> Stashed changes
-=======
-    m_Value: 1.5080228
->>>>>>> parent of d7a6687 (layout)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -767,17 +657,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 434
     y: 647
     width: 302
     height: 352
-=======
-    x: 433
-    y: 646
-    width: 303
-    height: 353
->>>>>>> parent of d7a6687 (layout)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &19
 MonoBehaviour:
@@ -807,7 +690,6 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< Updated upstream
@@ -819,11 +701,6 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 40fbffff
 >>>>>>> Stashed changes
-=======
-      m_SelectedIDs: a0ab0000
-      m_LastClickedID: 43936
-      m_ExpandedIDs: e2a1feff20b7feff22b7feff24fefeff80fffeffbe45ffff2651ffff2851ffff2c51ffff2665ffff4665ffff3670ffff3e70ffffb671ffff1679ffff4479ffffca7fffff6087ffffca89ffff3e8fffffac8fffff2c94ffff3c94ffffd0a4ffff34a9ffff38a9ffffd2a9ffffdaa9ffffdca9ffff32abffff44abffff42e0ffff08e6ffffd4eaffff1efaffff62faffff40fbffffee5a0000485b0000b0ab0000
->>>>>>> parent of d7a6687 (layout)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -870,11 +747,7 @@ MonoBehaviour:
     x: 738
     y: 73
     width: 760
-<<<<<<< HEAD
     height: 479
-=======
-    height: 478
->>>>>>> parent of d7a6687 (layout)
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
@@ -1026,15 +899,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 738
-<<<<<<< HEAD
     y: 573
     width: 760
     height: 426
-=======
-    y: 572
-    width: 760
-    height: 427
->>>>>>> parent of d7a6687 (layout)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1048,7 +915,6 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Folders: []
 =======
@@ -1058,10 +924,6 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
-=======
-    m_Folders:
-    - Assets/Scenes
->>>>>>> parent of d7a6687 (layout)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -1075,7 +937,6 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 683d0000
     m_LastClickedID: 15720
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_ExpandedIDs: 000000006442000066420000684200006e420000a8420000be420000c8420000d043000020440000224400002444000026440000284400002a4400002c4400002e44000030440000
@@ -1085,9 +946,6 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000001c4300001e43000020430000224300002443000026430000284300002a4300002c430000
 >>>>>>> Stashed changes
-=======
-    m_ExpandedIDs: b88effffdcf7ffffffffffff00000000784200007c4200007e4200001443000016430000184300001a4300001c4300001e43000020430000224300002443000026430000284300002a4300008e430000b6430000
->>>>>>> parent of d7a6687 (layout)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1115,7 +973,6 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_ExpandedIDs: ffffffff000000006442000066420000684200006e420000a8420000be420000c8420000d0430000204400002244000024440000284400002c4400002e44000030440000
@@ -1125,9 +982,6 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: ffffffff000000001c4300001e43000020430000224300002443000026430000284300002a4300002c430000
 >>>>>>> Stashed changes
-=======
-    m_ExpandedIDs: b88effffdcf7ffffffffffff00000000784200007c4200007e4200001443000016430000184300001a4300001c4300001e43000020430000224300002443000026430000284300002a4300008e430000b6430000
->>>>>>> parent of d7a6687 (layout)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
