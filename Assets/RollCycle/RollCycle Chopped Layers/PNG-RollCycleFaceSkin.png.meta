@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ac206e847b830d64faca0eb286d9cf5b
+=======
+<<<<<<< Updated upstream
+guid: ac206e847b830d64faca0eb286d9cf5b
+=======
+guid: 9c6efd183a0fdae46956257db00657da
+>>>>>>> Stashed changes
+>>>>>>> parent of b05a197 (Stash)
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

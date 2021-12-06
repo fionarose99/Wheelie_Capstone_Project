@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e0d2e27f624305c4ba92e9efe6bdbf6c
+=======
+<<<<<<< Updated upstream
+guid: e0d2e27f624305c4ba92e9efe6bdbf6c
+=======
+guid: 47de2f44388a87344b05dcaa3941f201
+>>>>>>> Stashed changes
+>>>>>>> parent of b05a197 (Stash)
 TextScriptImporter:
   externalObjects: {}
   userData: 
