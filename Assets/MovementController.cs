@@ -27,16 +27,13 @@ public class MovementController : MonoBehaviour
 
     // Animation Variables
     private Animator ani;
-    bool isLeft = true;
+    bool isLeft = false;
 
     // Horizontal Axis contains input info: left (a/arrow), right (d/arrow)
 
     // Start is called before the first frame update
     void Start()
     {
-        left = KeyCode.A;//GM.left;
-        right = KeyCode.D;// GM.right;
-        tilt = KeyCode.Space;// GM.tilt;
         ani = GetComponent<Animator>();             // Addresses Animator attached to Wheelie Prefab
         maincam = Camera.main;                      // Scene Main Camera
         Wheelmotor.maxMotorTorque = maxForce;       // Set's max force the player can add to the Wheelchair
@@ -134,4 +131,6 @@ public class MovementController : MonoBehaviour
         maincam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         // Default transform.position regards whatever object it's attached to -- the GameObject's transform (here, the Wheelie prefab)
     }
+
+
 }
