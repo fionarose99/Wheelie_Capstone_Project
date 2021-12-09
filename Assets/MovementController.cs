@@ -23,7 +23,7 @@ public class MovementController : MonoBehaviour
     bool JointMotorOn;
     float move;
     float lean;
-    float direction = 1;
+    float direction = -1;
 
     // Animation Variables
     private Animator ani;
