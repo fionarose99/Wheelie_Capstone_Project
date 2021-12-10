@@ -12,15 +12,18 @@ namespace HSVPicker
     {
 
         private ColorPicker color;
-        private SVBoxSlider slider;
         public SpriteRenderer sprite;
+
+        private void Awake()
+        {
+            color = GetComponent<ColorPicker>();
+            color.AssignColor(sprite.color);
+        }
 
         // Start is called before the first frame update
         void Start()
         {
             color = GetComponent<ColorPicker>();
-            slider = GetComponentInChildren<SVBoxSlider>();
-            color.AssignColor(sprite.color);
         }
 
         public void changeColor(SpriteRenderer spr)
