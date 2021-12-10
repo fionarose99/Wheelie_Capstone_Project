@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     {
         if (left == KeyCode.None)
         {
+
             left = KeyCode.A;
         }
         if (right == KeyCode.None)
@@ -36,8 +37,8 @@ public class GameManager : MonoBehaviour
         {
             tilt = KeyCode.Space;
         }
-
         DontDestroyOnLoad(this.gameObject);
+
 
     }
 
@@ -63,6 +64,7 @@ public class GameManager : MonoBehaviour
             {
                 if (gm != this.gameObject)
                 {
+                    Debug.Log("Done");
                     GameManager GameMan = gm.GetComponent<GameManager>();
                     GameMan.left = left;
                     GameMan.right = right;
@@ -151,19 +153,29 @@ public class GameManager : MonoBehaviour
         if (key.Equals("Left"))
         {
             left = temp;
-            player.left = left;
-            
+            if (player != null)
+            {
+                player.left = left;
+            }
+
         }
         if (key.Equals("Right"))
         {
             right = temp;
-            player.right = right;
+            if(player != null)
+            {
+                player.right = right;
+            }
+            
             
         }
         if (key.Equals("Tilt"))
         {
             tilt = temp;
-            player.tilt = tilt;
+            if (player != null)
+            {
+                player.tilt = tilt;
+            }
         }
 
         //txt.text = temp.ToString();

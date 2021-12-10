@@ -100,7 +100,7 @@ public class MovementController : MonoBehaviour
         ani.SetBool("Moving", WheelmotorOn);
         
         // Debug for testing
-        Debug.Log(dir + "," + move);
+        
     }
 
     private float HorizontalAxis()

@@ -3472,7 +3472,7 @@ GameObject:
   - component: {fileID: 904035866}
   - component: {fileID: 904035865}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManagerMenu
   m_TagString: GM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3491,6 +3491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test: Hello!
+  player: {fileID: 0}
   Menu: {fileID: 1092978738}
   Focus: {fileID: 0}
 --- !u!4 &904035866
