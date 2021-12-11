@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Menu
   - GM
+  - Ground
+  - Walls
+  - End
   layers:
   - Default
   - TransparentFX

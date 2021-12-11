@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 
 namespace HSVPicker
 {
-
-
     public class OverlayColor : MonoBehaviour
     {
 
@@ -16,14 +14,14 @@ namespace HSVPicker
 
         private void Awake()
         {
-            color = GetComponent<ColorPicker>();
-            color.AssignColor(sprite.color);
+            
         }
 
         // Start is called before the first frame update
         void Start()
         {
             color = GetComponent<ColorPicker>();
+            changeColor(sprite);
         }
 
         public void changeColor(SpriteRenderer spr)

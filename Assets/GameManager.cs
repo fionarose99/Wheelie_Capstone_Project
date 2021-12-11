@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public KeyCode tilt { get; set; }
 
-    public string test;
+    public bool paused;
 
     public MovementController player;
 
@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject Menu;
     public GameObject Focus;
+    public GameObject[] KeybindButtons;
+
+    private AudioListener Music;
+    private AudioListener Sound;
 
     private void Awake()
     {
@@ -45,15 +49,21 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player.left = left;
-        player.right = right;
-        player.tilt = tilt;
-        //Menu = GameObject.FindGameObjectWithTag("Menu");
-        //Menu.SetActive(false);
-        //left = KeyCode.A;
-        //right = KeyCode.D;
-        //tilt = KeyCode.Space;
+        if(name.Equals("GameManagerGame"))
+        {
+            TogglePause(paused);
+            player.left = left;
+            player.right = right;
+            player.tilt = tilt;
+        }
     }
+
+    void SetBindText()
+    {
+        KeybindButtons[0].GetComponentInChildren<Text>().text = left.ToString();
+        KeybindButtons[1].GetComponentInChildren<Text>().text = right.ToString();
+        KeybindButtons[2].GetComponentInChildren<Text>().text = tilt.ToString();
+    }    
 
     // Update is called once per frame
     void Update()
@@ -69,7 +79,13 @@ public class GameManager : MonoBehaviour
                     GameMan.left = left;
                     GameMan.right = right;
                     GameMan.tilt = tilt;
-                    GameMan.test = test;
+                    if(GameMan.player != null)
+                    {
+                        GameMan.player.left = left;
+                        GameMan.player.right = right;
+                        GameMan.player.tilt = tilt;
+                    }
+
                 }
             }
             Destroy(gameObject);
@@ -79,20 +95,53 @@ public class GameManager : MonoBehaviour
         {
             if (Focus != null)
             {
-                ToggleMenu(Focus);
+                if(Focus != Menu)
+                {
+                    ToggleMenu(Focus);
+                }
+
             }
             ToggleMenu(Menu);
+            TogglePause();
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            TogglePause(false);
+        }
+    }
+
+    public void TogglePause()
+    {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        } else
+        {
+            Time.timeScale = 0;
+        }
+    }
+
+    public void TogglePause(bool pause)
+    {
+        if(pause)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
         }
     }
 
     public void ToggleMenu(GameObject menu)
     {
         menu.SetActive(!menu.activeSelf);
+        if(menu.name.Equals("Keybinds"))
+        {
+            SetBindText();
+        }
         if (menu.activeSelf)
         {
             Focus = menu;
@@ -115,6 +164,7 @@ public class GameManager : MonoBehaviour
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
+        TogglePause(true);
     }
 
     public void Exit()

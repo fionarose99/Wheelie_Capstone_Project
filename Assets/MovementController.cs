@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovementController : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class MovementController : MonoBehaviour
     float move;
     float lean;
     float direction = -1;
+
+    public GameObject GameOver;
 
     // Animation Variables
     private Animator ani;
@@ -132,5 +135,20 @@ public class MovementController : MonoBehaviour
         // Default transform.position regards whatever object it's attached to -- the GameObject's transform (here, the Wheelie prefab)
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground"))
+        {
+            GM.TogglePause(true);
+            GM.ToggleMenu(GameOver);
+        }
 
+        if (collision.CompareTag("End"))
+        {
+            GM.TogglePause(true);
+            GameOver.GetComponentInChildren<Text>().text = "YOU WIN!";
+            GM.ToggleMenu(GameOver);
+        }
+
+    }
 }

@@ -10,6 +10,7 @@ public class Parallax : MonoBehaviour
     public float temp;
     public float dist;
     public float posLength;
+    public float moveSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +23,10 @@ public class Parallax : MonoBehaviour
     void Update()
     {
         temp = (cam.transform.position.x * (1 - paralaxEffect));
-        dist = (cam.transform.position.x * paralaxEffect);
+        dist = ((cam.transform.position.x) * paralaxEffect);
 
+        startpos += moveSpeed;
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
-
-        posLength = startpos + length;
 
         if (temp > startpos + length)
         {
