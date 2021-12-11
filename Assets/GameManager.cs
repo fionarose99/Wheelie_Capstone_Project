@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
     public GameObject Focus;
     public GameObject[] KeybindButtons;
 
-    private AudioListener Music;
-    private AudioListener Sound;
+    public AudioSource Music;
+    public AudioSource Sound;
 
     private void Awake()
     {
@@ -231,5 +231,10 @@ public class GameManager : MonoBehaviour
         //txt.text = temp.ToString();
         plc.text = temp.ToString();
         Debug.Log(temp.ToString());
+    }
+
+    public void playSound(AudioClip clip)
+    {
+        Sound.PlayOneShot(clip);
     }
 }
