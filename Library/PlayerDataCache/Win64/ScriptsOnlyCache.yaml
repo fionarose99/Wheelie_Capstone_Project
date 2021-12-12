@@ -1,17 +1,25 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioControl
+    - Cutscene
     - GameManager
+    - HSVPicker.OverlayColor
     - MovementController
+    - Parallax
+    HSVPicker.dll:
+    - HSVPicker.BoxSlider
+    - HSVPicker.ColorPicker
+    - HSVPicker.ColorSlider
+    - HSVPicker.ColorSliderImage
+    - HSVPicker.SVBoxSlider
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -21,13 +29,16 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -35,16 +46,21 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
@@ -90,45 +106,73 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 618}
+      Script: {instanceID: 646}
     - Class: 114
-      Script: {instanceID: 1556}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 1756}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 1986}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2246}
+      Script: {instanceID: 1976}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 2664}
+      Script: {instanceID: 2422}
     - Class: 114
-      Script: {instanceID: 2824}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 2674}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 3286}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 3296}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3398}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3780}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 3194}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 5566}
+      Script: {instanceID: 3430}
+    - Class: 114
+      Script: {instanceID: 3510}
+    - Class: 114
+      Script: {instanceID: 3658}
+    - Class: 114
+      Script: {instanceID: 3790}
+    - Class: 114
+      Script: {instanceID: 3822}
+    - Class: 114
+      Script: {instanceID: 4048}
+    - Class: 114
+      Script: {instanceID: 4158}
+    - Class: 114
+      Script: {instanceID: 4180}
+    - Class: 114
+      Script: {instanceID: 4246}
+    - Class: 114
+      Script: {instanceID: 4462}
+    - Class: 114
+      Script: {instanceID: 4550}
+    - Class: 114
+      Script: {instanceID: 4668}
+    - Class: 114
+      Script: {instanceID: 4812}
+    - Class: 114
+      Script: {instanceID: 5658}
+    - Class: 114
+      Script: {instanceID: 5732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,6 +195,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 235
       Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
     - Class: 156049354
@@ -172,9 +222,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -183,41 +239,53 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1556}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1674}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 1744}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 1756}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 1986}
+      Script: {instanceID: 1846}
     - Class: 114
-      Script: {instanceID: 2246}
+      Script: {instanceID: 1976}
     - Class: 114
-      Script: {instanceID: 2664}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2824}
+      Script: {instanceID: 2250}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 2674}
     - Class: 114
-      Script: {instanceID: 3100}
+      Script: {instanceID: 2838}
     - Class: 114
-      Script: {instanceID: 3286}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3296}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 3398}
+      Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 3780}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 3822}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 4048}
     - Class: 114
-      Script: {instanceID: 5566}
+      Script: {instanceID: 4246}
+    - Class: 114
+      Script: {instanceID: 4462}
+    - Class: 114
+      Script: {instanceID: 4668}
+    - Class: 114
+      Script: {instanceID: 4800}
+    - Class: 114
+      Script: {instanceID: 4812}
+    - Class: 114
+      Script: {instanceID: 5184}
+    - Class: 114
+      Script: {instanceID: 5658}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,6 +293,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -234,6 +304,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -241,6 +317,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: f4862fe0c27aae6474acfb6ff81d190b
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: ColorLabel
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
@@ -321,7 +403,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 84941ecc9ab33649d757b5b8c874386f
+      Hash: 1a2915d26fcd5177d168a3b4edbf4498
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -369,7 +451,13 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: beac5e58283861da309debf892bf5ff5
+      Hash: a72b59fc029116362b3317d54b5ec7e0
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPickerExamples
+    className: TiltWindow
+  - hash:
+      serializedVersion: 2
+      Hash: bc391de9c5f96122c065fdb8f628f921
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementController
@@ -397,6 +485,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: e80052be6f994349516ef119502d9146
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: SVBoxSlider
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -459,6 +553,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: ab4a52ae62f2955a304cc4f55c55026e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: HSVPicker
+    className: OverlayColor
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -507,6 +607,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
+      Hash: 4bc3701a5a0528400fe2743c92380ca2
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: ColorSlider
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -523,6 +629,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: f27208b5dfd43745b544e400f539ae1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cutscene
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -579,10 +691,22 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: f821b98f1a699b89ba2ee90764109a0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Parallax
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9b342e16548b7ae6e7fda8a7ef2f7e9a
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: BoxSlider
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -615,6 +739,12 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
+      Hash: 3dfaa02886b930262fc04c4f05a0301a
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: ColorPresets
+  - hash:
+      serializedVersion: 2
       Hash: 0edeba255bdbade25edc357f1412ba38
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
@@ -627,6 +757,18 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: e80052be6f994349516ef119502d9146
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: ColorImage
+  - hash:
+      serializedVersion: 2
+      Hash: a05f8ee8b82ae06c84687fea66396f27
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPickerExamples
+    className: ColorPickerTester
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -637,6 +779,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: 5d9528c23d73840cef41963ef71d7efb
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: ColorPicker
+  - hash:
+      serializedVersion: 2
+      Hash: e483bf600be1c0c43c778f81975cd000
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: HexColorField
   - hash:
       serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
@@ -691,6 +845,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 2122ad77b35f7f0129bab21633be2a24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioControl
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -763,9 +923,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: fc01441e5d5b69ef149be4f22a897c42
+    assemblyName: HSVPicker.dll
+    namespaceName: HSVPicker
+    className: ColorSliderImage
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/Nils Schofer/Documents/GitHub/Wheelie_Capstone_Project/Builds/Wheelie
-    Build 0.2/Wheelie Project.exe
+  playerPath: C:/Users/Nils Schofer/Wheelie Project/Wheelie_Capstone_Project/Builds/Wheelie
+    Project.exe

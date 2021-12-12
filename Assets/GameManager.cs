@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
 
     public MovementController player;
 
+    public string playerName;
+
+    public Cutscene firstCutscene;
+
     private Scene MyScene;
 
     public GameObject Menu;
@@ -25,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     public AudioSource Music;
     public AudioSource Sound;
+    public float StartingPos = 0;
+    public bool saveGame = false;
 
     private void Awake()
     {
@@ -63,7 +69,13 @@ public class GameManager : MonoBehaviour
         KeybindButtons[0].GetComponentInChildren<Text>().text = left.ToString();
         KeybindButtons[1].GetComponentInChildren<Text>().text = right.ToString();
         KeybindButtons[2].GetComponentInChildren<Text>().text = tilt.ToString();
-    }    
+    }
+    
+    public void ResetGame()
+    {
+        StartingPos = 0;
+        saveGame = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -79,13 +91,33 @@ public class GameManager : MonoBehaviour
                     GameMan.left = left;
                     GameMan.right = right;
                     GameMan.tilt = tilt;
-                    if(GameMan.player != null)
+                    GameMan.StartingPos = StartingPos; 
+                    GameMan.playerName = playerName;
+                    
+                    if (!saveGame)
                     {
+                        if(GameMan.firstCutscene != null)
+                        {
+                            GameMan.TogglePause(true);
+                            GameMan.firstCutscene.transform.parent.gameObject.SetActive(true);
+                            GameMan.firstCutscene.gameObject.SetActive(true);
+                            Debug.Log("Did it");
+                            GameMan.firstCutscene.Play();
+                        }
+                        
+                    }
+                    saveGame = true;
+                    GameMan.saveGame = saveGame;
+                    if (GameMan.player != null)
+                    {                     
                         GameMan.player.left = left;
                         GameMan.player.right = right;
                         GameMan.player.tilt = tilt;
-                    }
+                        GameMan.player.transform.position = new Vector3(StartingPos, 0.4f, 0f);
+                        GameMan.Music.clip = Music.clip;
+                        GameMan.Music.Play();
 
+                    }
                 }
             }
             Destroy(gameObject);
@@ -142,6 +174,19 @@ public class GameManager : MonoBehaviour
         {
             SetBindText();
         }
+
+        if(menu.name.Equals("Play Menu"))
+        {
+            foreach (Button load in menu.GetComponentsInChildren<Button>())
+            {
+                if(load.gameObject.name.Equals("Load Game"))
+                {
+                    load.interactable = saveGame;
+                }
+            }
+            
+        }
+        
         if (menu.activeSelf)
         {
             Focus = menu;
@@ -236,5 +281,18 @@ public class GameManager : MonoBehaviour
     public void playSound(AudioClip clip)
     {
         Sound.PlayOneShot(clip);
+    }
+
+    public void setPlayerName (InputField input)
+    {
+        
+        playerName = input.text;
+        Debug.Log(playerName);
+    }
+
+    public void setMusic (AudioClip newMusic)
+    {
+        Music.clip = newMusic;
+        Music.Play();
     }
 }

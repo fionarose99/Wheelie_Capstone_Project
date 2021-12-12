@@ -8,6 +8,8 @@ public class MovementController : MonoBehaviour
     Camera maincam;
     public GameManager GM;
 
+    public Sprite CheckpointSprite;
+
     public KeyCode left { get; set; }
     public KeyCode right { get; set; }
     public KeyCode tilt { get; set; }
@@ -148,6 +150,12 @@ public class MovementController : MonoBehaviour
             GM.TogglePause(true);
             GameOver.GetComponentInChildren<Text>().text = "YOU WIN!";
             GM.ToggleMenu(GameOver);
+        }
+
+        if (collision.CompareTag("Checkpoint"))
+        {
+            GM.StartingPos = collision.transform.position.x;
+            collision.GetComponent<SpriteRenderer>().sprite = CheckpointSprite;
         }
 
     }
