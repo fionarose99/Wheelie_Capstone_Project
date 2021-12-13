@@ -137,7 +137,7 @@ public class GameManager : MonoBehaviour
             TogglePause();
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && !paused)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             TogglePause(false);
@@ -148,15 +148,19 @@ public class GameManager : MonoBehaviour
     {
         if(Time.timeScale == 0)
         {
+            paused = false;
             Time.timeScale = 1;
+
         } else
         {
+            paused = false;
             Time.timeScale = 0;
         }
     }
 
     public void TogglePause(bool pause)
     {
+        paused = pause;
         if(pause)
         {
             Time.timeScale = 0;

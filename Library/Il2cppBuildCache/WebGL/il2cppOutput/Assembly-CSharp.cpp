@@ -5234,28 +5234,35 @@ IL_01cb:
 
 IL_01dd:
 	{
-		// if (Input.GetKeyDown(KeyCode.R))
+		// if (Input.GetKeyDown(KeyCode.R) && !paused)
 		bool L_74;
 		L_74 = Input_GetKeyDown_m476116696E71771641BBECBAB1A4C55E69018220(((int32_t)114), /*hidden argument*/NULL);
 		if (!L_74)
 		{
-			goto IL_0200;
+			goto IL_0208;
+		}
+	}
+	{
+		bool L_75 = __this->get_paused_7();
+		if (L_75)
+		{
+			goto IL_0208;
 		}
 	}
 	{
 		// SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
-		Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  L_75;
-		L_75 = SceneManager_GetActiveScene_mB9A5037FFB576B2432D0BFEF6A161B7C4C1921A4(/*hidden argument*/NULL);
-		V_4 = L_75;
-		String_t* L_76;
-		L_76 = Scene_get_name_m38F195D7CA6417FED310C23E4D8E86150C7835B8((Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE *)(&V_4), /*hidden argument*/NULL);
-		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(L_76, /*hidden argument*/NULL);
+		Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE  L_76;
+		L_76 = SceneManager_GetActiveScene_mB9A5037FFB576B2432D0BFEF6A161B7C4C1921A4(/*hidden argument*/NULL);
+		V_4 = L_76;
+		String_t* L_77;
+		L_77 = Scene_get_name_m38F195D7CA6417FED310C23E4D8E86150C7835B8((Scene_t5495AD2FDC587DB2E94D9BDE2B85868BFB9A92EE *)(&V_4), /*hidden argument*/NULL);
+		SceneManager_LoadScene_m7DAF30213E99396ECBDB1BD40CC34CCF36902092(L_77, /*hidden argument*/NULL);
 		// TogglePause(false);
 		GameManager_TogglePause_m57A193341384597A31CC6440498FE4D263438C1D(__this, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0200:
+IL_0208:
 	{
 		// }
 		return;
@@ -5270,18 +5277,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_TogglePause_m4B2F2B7E44136B1
 		L_0 = Time_get_timeScale_m082A05928ED5917AA986FAA6106E79D8446A26F4(/*hidden argument*/NULL);
 		if ((!(((float)L_0) == ((float)(0.0f)))))
 		{
-			goto IL_0017;
+			goto IL_001e;
 		}
 	}
 	{
+		// paused = false;
+		__this->set_paused_7((bool)0);
 		// Time.timeScale = 1;
 		Time_set_timeScale_m1987DE9E74FC6C0126CE4F59A6293E3B85BD01EA((1.0f), /*hidden argument*/NULL);
 		// } else
 		return;
 	}
 
-IL_0017:
+IL_001e:
 	{
+		// paused = false;
+		__this->set_paused_7((bool)0);
 		// Time.timeScale = 0;
 		Time_set_timeScale_m1987DE9E74FC6C0126CE4F59A6293E3B85BD01EA((0.0f), /*hidden argument*/NULL);
 		// }
@@ -5292,11 +5303,14 @@ IL_0017:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_TogglePause_m57A193341384597A31CC6440498FE4D263438C1D (GameManager_t9013B33302D2B40A51D0E8059DEE0DC180218AA1 * __this, bool ___pause0, const RuntimeMethod* method)
 {
 	{
-		// if(pause)
+		// paused = pause;
 		bool L_0 = ___pause0;
-		if (!L_0)
+		__this->set_paused_7(L_0);
+		// if(pause)
+		bool L_1 = ___pause0;
+		if (!L_1)
 		{
-			goto IL_000e;
+			goto IL_0015;
 		}
 	}
 	{
@@ -5306,7 +5320,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_TogglePause_m57A193341384597
 		return;
 	}
 
-IL_000e:
+IL_0015:
 	{
 		// Time.timeScale = 1;
 		Time_set_timeScale_m1987DE9E74FC6C0126CE4F59A6293E3B85BD01EA((1.0f), /*hidden argument*/NULL);
