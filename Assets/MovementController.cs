@@ -156,6 +156,7 @@ public class MovementController : MonoBehaviour
         {
             GM.StartingPos = collision.transform.position.x;
             collision.GetComponent<SpriteRenderer>().sprite = CheckpointSprite;
+            GM.flow.FindBlock("LaunchShop").StartExecution();
         }
 
     }
