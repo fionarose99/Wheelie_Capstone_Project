@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventoryMan : MonoBehaviour
 {
     public int sigCount;
+    public GameManager GM;
 
     // Start is called before the first frame update
     void Start()
@@ -13,8 +14,20 @@ public class InventoryMan : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        // Debug.Log("UPDATE");
         // OnTriggerEnter -- tag = "Signature"
+        void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Signature"))
+        {
+            // GM.TogglePause(true);
+            Debug.Log("signature collected");
+            sigCount++;
+        }
+
+    }
     }
 }
