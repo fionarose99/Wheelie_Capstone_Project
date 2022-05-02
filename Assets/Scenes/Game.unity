@@ -41814,7 +41814,6 @@ GameObject:
   - component: {fileID: 1386161293}
   - component: {fileID: 1386161292}
   - component: {fileID: 1386161291}
-  - component: {fileID: 1386161299}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -41845,7 +41844,7 @@ MonoBehaviour:
   itemId: 1
   blockName: LaunchShop
   description: Launches the shop menu
-  eventHandler: {fileID: 1386161299}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1386161286}
   - {fileID: 1386161282}
@@ -41920,8 +41919,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1386161277}
-  selectedCommands:
-  - {fileID: 1386161283}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -42362,21 +42360,6 @@ MonoBehaviour:
   returnValueType: 
   showInherited: 0
   callMode: 0
---- !u!114 &1386161299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386161276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1386161277}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!1 &1387680065
 GameObject:
   m_ObjectHideFlags: 0
@@ -55333,6 +55316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sigCount: 0
+  GM: {fileID: 682503912}
+  moveCon: {fileID: 1514316844}
+  playerObj: {fileID: 6731587131421352694}
 --- !u!4 &6731587131421352699
 Transform:
   m_ObjectHideFlags: 0
