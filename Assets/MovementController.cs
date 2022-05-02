@@ -157,7 +157,9 @@ public class MovementController : MonoBehaviour
         {
             GM.StartingPos = collision.transform.position.x;
             collision.GetComponent<SpriteRenderer>().sprite = CheckpointSprite;
-            GM.flow.FindBlock("LaunchShop").StartExecution();
+            Debug.Log("Wheelchair collided with checkpoint");
+            // GM.flow.FindBlock("LaunchShop").StartExecution();
+            // public void LaunchShop(string blockName) => OnBlockStart?.Invoke(blockName);
         }
 
     }
