@@ -41814,6 +41814,7 @@ GameObject:
   - component: {fileID: 1386161293}
   - component: {fileID: 1386161292}
   - component: {fileID: 1386161291}
+  - component: {fileID: 1386161299}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -41844,7 +41845,7 @@ MonoBehaviour:
   itemId: 1
   blockName: LaunchShop
   description: Launches the shop menu
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 1386161299}
   commandList:
   - {fileID: 1386161286}
   - {fileID: 1386161282}
@@ -42180,7 +42181,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1386161291
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42195,7 +42196,7 @@ MonoBehaviour:
   menuDialog: {fileID: 50483199}
 --- !u!114 &1386161292
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42216,7 +42217,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1386161293
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42237,7 +42238,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1386161294
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42264,7 +42265,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1386161295
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42285,7 +42286,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1386161296
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -42360,6 +42361,21 @@ MonoBehaviour:
   returnValueType: 
   showInherited: 0
   callMode: 0
+--- !u!114 &1386161299
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386161276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1386161277}
+  suppressBlockAutoSelect: 0
+  message: Checkpoint
 --- !u!1 &1387680065
 GameObject:
   m_ObjectHideFlags: 0
@@ -55221,9 +55237,10 @@ GameObject:
   - component: {fileID: 6731587131421352695}
   - component: {fileID: 6731587131421352696}
   - component: {fileID: 6731587131421352697}
+  - component: {fileID: 6731587131421352698}
   m_Layer: 0
   m_Name: Wheelie
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55319,6 +55336,19 @@ MonoBehaviour:
   GM: {fileID: 682503912}
   moveCon: {fileID: 1514316844}
   playerObj: {fileID: 6731587131421352694}
+--- !u!114 &6731587131421352698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731587131421352694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a3d8d67d14877429ff8cb541774a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flow: {fileID: 1386161280}
 --- !u!4 &6731587131421352699
 Transform:
   m_ObjectHideFlags: 0

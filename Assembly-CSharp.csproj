@@ -60,6 +60,7 @@
     <Compile Include="Assets\InventoryMan.cs" />
     <Compile Include="Assets\MovementController.cs" />
     <Compile Include="Assets\Cutscene.cs" />
+    <Compile Include="Assets\FungusTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HSV-Color-Picker-Unity-master\Assets\TextMesh Pro\Shaders\TMPro.cginc" />
