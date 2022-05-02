@@ -6,6 +6,8 @@ public class InventoryMan : MonoBehaviour
 {
     public int sigCount;
     public GameManager GM;
+    public MovementController moveCon;
+    public GameObject playerObj;
 
     // Start is called before the first frame update
     void Start()
@@ -18,16 +20,17 @@ public class InventoryMan : MonoBehaviour
     {
         // Debug.Log("UPDATE");
         // OnTriggerEnter -- tag = "Signature"
-        void OnTriggerEnter2D(Collider2D collision)
-    {
 
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.CompareTag("Signature"))
         {
             // GM.TogglePause(true);
             Debug.Log("signature collected");
             sigCount++;
         }
-
-    }
     }
 }
