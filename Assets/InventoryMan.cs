@@ -31,6 +31,7 @@ public class InventoryMan : MonoBehaviour
             // GM.TogglePause(true);
             Debug.Log("signature collected");
             sigCount++;
+            Destroy(collision.gameObject);
         }
     }
 }
