@@ -54971,6 +54971,7 @@ GameObject:
   - component: {fileID: 1514316844}
   - component: {fileID: 6731587131421352695}
   - component: {fileID: 6731587131421352696}
+  - component: {fileID: 6731587131421352697}
   m_Layer: 0
   m_Name: Wheelie
   m_TagString: Untagged
@@ -55053,6 +55054,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6731587131421352697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731587131421352694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dfdb6a8197dfc4c843361f92c79f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sigCount: 0
 --- !u!4 &6731587131421352699
 Transform:
   m_ObjectHideFlags: 0
