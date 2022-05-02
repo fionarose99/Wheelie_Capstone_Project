@@ -42,8 +42,8 @@ public class MovementController : MonoBehaviour
     {
         ani = GetComponent<Animator>();             // Addresses Animator attached to Wheelie Prefab
         maincam = Camera.main;                      // Scene Main Camera
-        Wheelmotor.maxMotorTorque = maxForce;       // Set's max force the player can add to the Wheelchair
-        JointMot.maxMotorTorque = maxForce;       // Set's max force the player can add to the Wheelchair
+        Wheelmotor.maxMotorTorque = maxForce;       // Sets max force the player can add to the Wheelchair
+        JointMot.maxMotorTorque = maxForce;       // Sets max force the player can add to the Wheelchair
     }
 
     // FixedUpdate called first -- Once per frame
