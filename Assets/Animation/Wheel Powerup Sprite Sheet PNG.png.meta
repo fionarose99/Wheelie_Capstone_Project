@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: d74fc77c0e6954192af4cb650bf51d6a
 TextureImporter:
   internalIDToNameTable:
@@ -12,11 +11,6 @@ TextureImporter:
   - first:
       213: -4726481101683395228
     second: Wheel Powerup Sprite Sheet PNG_2
-=======
-guid: 272a9ab6e172a97439606b0a7a32781c
-TextureImporter:
-  internalIDToNameTable: []
->>>>>>> f5078f65bfc8824bc4cdff3d803e236535caf762
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,24 +41,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: 1
->>>>>>> f5078f65bfc8824bc4cdff3d803e236535caf762
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> f5078f65bfc8824bc4cdff3d803e236535caf762
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,14 +70,13 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -117,9 +102,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-=======
-    textureCompression: 1
->>>>>>> f5078f65bfc8824bc4cdff3d803e236535caf762
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,18 +110,17 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: Wheel Powerup Sprite Sheet PNG_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 30
-        height: 30
+        x: 3
+        y: 13
+        width: 7
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +136,12 @@ TextureImporter:
       name: Wheel Powerup Sprite Sheet PNG_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 0
-        width: 30
-        height: 30
+        x: 40
+        y: 8
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +157,12 @@ TextureImporter:
       name: Wheel Powerup Sprite Sheet PNG_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 30
-        height: 30
+        x: 70
+        y: 8
+        width: 15
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,13 +174,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-=======
-    sprites: []
->>>>>>> f5078f65bfc8824bc4cdff3d803e236535caf762
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: f207cf48cdd7649e1855e938a68a56bf
     internalID: 0
     vertices: []
     indices: 
